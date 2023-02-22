@@ -7,14 +7,21 @@ def stock_list(list_of_art, list_of_cat):
     for item in list_of_art:
         key_letter = item[0]
         books_count = item[-3:]
-        if item[0] in list_of_cat:
+
+        if key_letter in list_of_cat:
             result[key_letter] = int(books_count)
-        print(result)
-    # total_fstring = ""
-    # for key_value in result:
-    #     total_fstring.join(key_value)
-    #     print(total_fstring)
-    # return total_fstring
+            print(result)
+        elif key_letter == "":
+            return ""
+        else:
+            result[key_letter] = 0
+    total_string = ""
+    for key, value in result.items():
+        string = f"({key} : {value})"
+        total_string += f" - {string}"
+
+        print(total_string[3:])
+    return total_string[3:]
 
 
 stock_list(list_of_art, list_of_cat)
