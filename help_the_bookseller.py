@@ -1,6 +1,8 @@
-list_of_art = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
-list_of_cat = ["A", "B"]
+# list_of_art = ["ABAR 200", "CDXE 500", "BKWR 250", "BTSQ 890", "DRTY 600"]
+# list_of_cat = ["A", "B"]
 
+list_of_art = ["ABART 20", "CDXEF 50", "BKWRK 25", "BTSQZ 89", "DRTYM 60"]
+list_of_cat = ["A", "B", "C", "W"]
 
 def stock_list(list_of_art, list_of_cat):
     result = {}
