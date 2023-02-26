@@ -1,8 +1,6 @@
 def spin_words(sentence):
     spinned_words = ""
-
     for word in sentence.split():
-        print(word)
         if len(word) >= 5:
             word = word[::-1]
             spinned_words += word + " "
