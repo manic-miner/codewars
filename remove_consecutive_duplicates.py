@@ -1,6 +1,9 @@
 def remove_consecutive_duplicates(s):
     words = s.split()
-    result = [words[0]]
+    if len(words) > 0:
+        result = [words[0]]
+    else:
+        return ""
 
     for word in words:
         if word != result[-1]:
